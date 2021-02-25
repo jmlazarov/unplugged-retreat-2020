@@ -87,7 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* -- base header and footer styles -- */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+p, h1, h2, h3 {
+  color: #c5c6cf;
+}
+
+   /* -- base header and footer styles -- */
 
 header, footer {
   display: flex;
@@ -96,15 +105,22 @@ header, footer {
   align-items: center;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 1px solid rgb(70, 70, 70);
+  margin: 10px 0 20px 0;
 }
 
 nav {
@@ -112,27 +128,35 @@ nav {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
+  width: 60%;
 }
 
 nav ul {
   display: flex;
   justify-content: space-around;
+  list-style: none;
+  width: 100%;
 }
 
 nav ul li {
-  
+  padding: 0 30px;
 }
 
-.footer-content {
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
 
+footer {
+  flex-direction: column;
+}
+
+footer p {
+  margin: 0;
 }
 
 .contact {
-
-}
-
-.social {
-
+  margin-bottom: 50px;
 }
 
 .social-icons {
@@ -148,7 +172,7 @@ nav ul li {
 }
 
 .copyright {
-
+  margin: 20px 0;
 }
 
 /* -- homepage main section styles -- */
@@ -166,12 +190,11 @@ aside {
   align-items: center;
 }
 
-.form-description {
-
-}
-
 .form {
-
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .features {
@@ -187,10 +210,32 @@ aside {
   align-items: center;
 }
 
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features p {
+  margin: 0;
+}
+
 .reviews {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 /* -- about page styles -- */
@@ -209,6 +254,10 @@ aside {
   align-items: center;
 }
 
+.contact-section p {
+  margin: 0;
+}
+
 /* -- faq page styles -- */
 
 .faq {
@@ -223,6 +272,15 @@ aside {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq .question-1, .question-2, .question-3, .question-4 {
+  margin-bottom: 50px;
 }
 
 
