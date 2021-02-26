@@ -92,8 +92,8 @@ textarea {
   margin: 50px 0;
 }
 
-p, h1, h2, h3 {
-  color: #c5c6cf;
+p, h1, h2, h3, h4 {
+  color: lightgray;
 }
 
    /* -- base header and footer styles -- */
@@ -186,13 +186,6 @@ footer p {
 aside {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
@@ -372,15 +365,130 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/* -- tablet -- */
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+/* -- header and footer styles -- */
+
+  header {
+    justify-content: space-around;
+    padding: 33px 0;
+  }
+  
+  header .content-wrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header-divider {
+    display: none;
+  }
+
+  nav {
+    width: 20%;
+  }
+
+  nav ul {
+    justify-content: space-between;
+  }
+
+  footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contact {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    width: 100%;
+  }
+
+/* -- homepage main section styles -- */
+
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  .form-description, .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  .features-item-description {
+    width: 50%;
+  }
+
+  .features article {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;  
+  }
+
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+/* -- about page styles -- */
+
+  .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .mission-content p {
+    width: 45%;
+  }
+
+  .contact-section .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .contact-section .content-wrapper h2 {
+    width: 80%;
+  }
+
+  /* -- faq page styles -- */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq .question-1, .question-2, .question-3, .question-4 {
+    flex-basis: 45%;
+  }
+
+  .faq h2 {
+    width: 100%;
+  }
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* -- desktop -- */
+@media only screen and (min-width: 1200px) {
+
 }
 
 /* ==========================================================================
