@@ -87,16 +87,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
 }
-
-p, h1, h2, h3, h4 {
-  color: lightgray;
+ 
+ul, 
+ol {
+  list-style-type: none;
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.5em;
 }
 
-   /* -- base header and footer styles -- */
+p, h1, h2, h3, h4 {
+  color: #e2e3ed;
+}
+
+address {
+  font-style: normal;
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+
+/* -- base header and footer styles -- */
 
 header, footer {
   display: flex;
@@ -134,7 +183,6 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
-  list-style: none;
   width: 100%;
 }
 
@@ -217,7 +265,6 @@ aside {
 
 .features h2 {
   margin-bottom: 60px;
-  padding-left: 20px;
 }
 
 .features p {
@@ -232,17 +279,11 @@ aside {
 
 .reviews h2 {
   margin-bottom: 40px;
-  padding-left: 20px;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
-  padding-left: 20px;
-}
-
-.reviews p {
-  padding-left: 20px;
 }
 
 /* -- about page styles -- */
