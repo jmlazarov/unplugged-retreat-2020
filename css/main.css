@@ -609,6 +609,10 @@ input[type=button] {
     padding-right: 25px;
   }
 
+  .map figure {
+    padding-bottom: 75%;
+  }
+
   .contact-section .info {
     display: flex;
     flex-flow: column wrap;
@@ -693,6 +697,10 @@ input[type=button] {
   .mission-content p {
     width: 40%;
     padding-right: 30px;
+  }
+
+  .map figure {
+    padding-bottom: 50%;
   }
 
   .contact-section .content-wrapper h1 {
